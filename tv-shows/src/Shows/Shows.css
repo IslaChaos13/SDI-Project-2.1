@@ -1,0 +1,36 @@
+.tvShows-main{
+    background-color: rgb(16, 15, 15);
+    margin: auto;
+    border: 15px solid #22111d;
+    border-radius: 5px;
+}
+
+.tvShows-screen{
+    background-color: #589687;
+    margin: auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.tvShows-screen h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px #827171;
+}
+
+.tvShows-screen p{
+    text-align: justify;
+    font-size: large;
+    background-color: #8dddb9;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    padding: 5px;
+
+}
+.tvShows-main ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    list-style-type: none;
+}

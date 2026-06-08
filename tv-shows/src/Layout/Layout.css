@@ -1,0 +1,63 @@
+.layout-main{
+    display: flex;
+    height: 150px;
+    border: 10px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    background-image: url(../assets/bingeMaster.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-color: #7dc5b1 ;
+
+}
+
+.layout-main ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.layout-main ul button{
+    max-width:max-content;
+    max-height: auto;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+
+}
+.layout-main ul .home{
+    color: white;
+    background-color:#dc8972;
+}
+
+.layout-main ul .shows{
+    color: white;
+    background-color:#ec8f38;
+}
+.layout-main ul .watchlist{
+    color: white;
+    background-color:#9ed167;
+}
+
+.layout-main ul .survey{
+    color: white;
+    background-color: #4690e4;
+}
+
+.layout-main ul .search{
+    max-height: fit-content;
+    max-width: 400px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    outline: none;
+    background-color: #1f1f1f;
+}
+
+.layout-main button:hover {
+    background-color: #e5d6d7;
+}

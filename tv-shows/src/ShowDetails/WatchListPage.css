@@ -1,0 +1,43 @@
+.watchlist{
+    background-color: #7dc5b1;
+}
+.watchlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 1rem;
+}
+
+.watchlist-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.watchlist-card img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+
+.watchlist-card h3 {
+  font-size: 14px;
+  padding: 8px 8px 4px;
+  margin: 0;
+}
+
+.watchlist-card p {
+  font-size: 12px;
+  padding: 0 8px;
+  margin: 0;
+  color: #aaa;
+  flex: 1;
+}
+
+.watchlist-card button {
+  margin: 8px;
+  padding: 6px;
+  cursor: pointer;
+}
