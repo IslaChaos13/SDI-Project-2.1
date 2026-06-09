@@ -7,9 +7,9 @@ function WatchlistPage() {
   const { watchlist, removeFromWatchlist } = useWatchlist();
   const navigate = useNavigate()
 
-  if (watchlist.length === 0) {
+  if (!watchlist || watchlist.length === 0) {
     return (
-      <div>
+      <div className = "empty">
         <h1>My Watchlist</h1>
         <p>No shows saved yet.</p>
         <button onClick={() => {navigate('/shows')}}>Browse shows</button>
@@ -19,6 +19,7 @@ function WatchlistPage() {
   }
 
   return (
+
     <div className ="watchlist">
       <h1>My Watchlist ({watchlist.length})</h1>
       <div className="watchlist-grid">
@@ -26,7 +27,7 @@ function WatchlistPage() {
           <div key={show.id} className="watchlist-card">
             <img src={show.image?.medium} alt={show.name} />
             <h3>{show.name}</h3>
-            <p>{show.genres.join(' | ')}</p>
+            <p>{show.genres?.join(' | ') || 'No genres listed'}</p>
             <button onClick={() => removeFromWatchlist(show.id)}>
               Remove
             </button>

@@ -1,14 +1,25 @@
 import { useSurvey } from "../context/SurveyContext";
+import { useNavigate } from 'react-router-dom'
+import '../css/SurveyResults.css'
 
 function SurveyResults() {
   const { results } = useSurvey();
 
+  if(!results || results.length === 0)
+    return(
+      <div className = "empty-surveyresults">
+        <h1>All Survey Results</h1>
+        <p> No survey has been submitted yet.</p>
+        <button onClick={() => {navigate('/survey')}}>doesnt work</button>
+      </div>
+    )
+
   return (
-    <div>
-      <h2>All Survey Results</h2>
-      {results.length === 0 && <p>No responses yet.</p>}
+    <div className ="surveyResults">
+      <h2>ALL SURVEY RESULTS</h2>
+
       {results.map((r, index) => (
-        <div key={index} style={{ border: "1px solid #ccc", padding: "1rem", marginBottom: "1rem" }}>
+        <div className="surveyAnswer" key={index}>
           <h3>Response #{index + 1}</h3>
           <p><strong>Watch Hours:</strong> {r.watchHrs}</p>
           <p><strong>Preferred Method:</strong> {r.preferredMethod}</p>

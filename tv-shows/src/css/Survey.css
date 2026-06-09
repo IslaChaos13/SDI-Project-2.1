@@ -1,0 +1,10 @@
+.survey{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    border: 10px solid rgb(12, 12,12);
+    border-radius: 10px;
+    min-height: 100px;
+    background-color: #589687;
+
+}

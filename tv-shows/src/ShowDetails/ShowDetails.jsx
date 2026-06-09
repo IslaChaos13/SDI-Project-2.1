@@ -1,12 +1,15 @@
 import { useState, useEffect, useContext } from 'react'
-import { useOutletContext, Link, useParams } from 'react-router-dom'
+import { useOutletContext, useNavigate, useParams } from 'react-router-dom'
 import { useWatchlist } from "../context/WatchlistContext";
+import './showdetails.css'
 
 function ShowDetails () {
     const [show, setShow] = useState(null)
     const { id } = useParams()
 
     const { addToWatchlist, removeFromWatchlist, isInWatchlist } = useWatchlist();
+
+    const navigate = useNavigate()
 
     useEffect(() => {
         fetch(`https://api.tvmaze.com/shows/${id}`)
@@ -32,7 +35,7 @@ function ShowDetails () {
 
                 <div className = 'l-Details'>
 
-                    <Link to='/'><button>Back</button></Link>
+                    <button onClick={()=> navigate('/shows')}>Back to Shows</button>
 
                     <h1>{show.name}</h1>
                     < img src = {show.image?.medium} alt={show.name} />
@@ -45,11 +48,12 @@ function ShowDetails () {
                     <p>Rating: {show.rating?.average ?? 'N/A'}</p>
                     <p dangerouslySetInnerHTML = {{__html: show.summary}} />
 
-                <div>
-                    {/* ...your existing show details UI... */}
-                    <button onClick={handleToggle}>
+                        <button onClick={handleToggle}>
                         {added ? "✓ In Watchlist" : "+ Add to Watchlist"}
                     </button>
+
+                <div>
+
                     </div>
 
                 </div>

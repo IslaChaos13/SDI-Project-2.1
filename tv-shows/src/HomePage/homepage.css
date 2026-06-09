@@ -20,7 +20,7 @@
 }
 
 .tv-screen h1{
-    font-family: Cambria;
+    font-family: monospace;
     text-align: center;
     position:relative;
     top: 125px;
@@ -28,6 +28,8 @@
 }
 
 .tv-screen li{
+    font-family: monospace;
+    font-size: large;
     list-style: none;
     position: relative;
     top: 115px;
@@ -37,42 +39,47 @@
 
 .tv-screen .showOverlay button{
     position: relative;
-    top: 175px;
-    left: 258px;
+    top: 200px;
+    left: 260px;
     background-color: transparent;
     padding: 2%;
-    border: none;
+   border: none;
 
 }
 
 .tv-screen .watchListOverlay button{
     position: relative;
-    top: 145px;
+    top: 160px;
     left: 330px;
     background-color: transparent;
     padding: 2%;
     border: none;
+
 }
 
 .tv-screen .surveyOverlay button{
     position: relative;
-    top: 65px;
-    left: 390px;
+    top: 120px;
+    left: 395px;
     background-color: transparent;
     padding: 2%;
+    border: none;
+   border: none;
 }
 
 .tv-screen .surveyResultsOverlay button{
     position: relative;
-    top: 10px;
-    left: 458px;
+    top: 85px;
+    left: 462px;
     background-color: transparent;
     padding: 2%;
+     border: none;
 }
 .tv-screen .pink button{
     position: relative;
-    top: -45px;
-    left: 525px;
+    top: 45px;
+    left: 530px;
     background-color: transparent;
     padding: 2%;
+     border: none;
 }

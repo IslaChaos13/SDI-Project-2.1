@@ -1,0 +1,24 @@
+.showDetails{
+    background-color: #7dc5b1;
+    border: 10px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.l-Details{
+    flex: 1;
+}
+
+.l-Details h1{
+    text-align: center;
+}
+
+.r-Details{
+    flex: 2;
+    align-items: center;
+    font-family: monospace;
+    text-align: justify;
+}
+

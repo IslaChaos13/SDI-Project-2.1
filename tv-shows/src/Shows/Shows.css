@@ -20,7 +20,8 @@
 
 .tvShows-screen p{
     text-align: justify;
-    font-size: large;
+    font-family: monospace;
+    font-size: medium;
     background-color: #8dddb9;
     border: 2px solid black;
     border-radius: 5px;
@@ -33,4 +34,19 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
     list-style-type: none;
+    justify-content: center;
+}
+
+.tvShows-main ul button{
+    max-width: max-content;
+    max-height: auto;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    font-family: monospace;
+    background-color: #ccc;
+}
+
+.tvShows-main ul button:hover{
+    background-color: #e5d6d7;
 }

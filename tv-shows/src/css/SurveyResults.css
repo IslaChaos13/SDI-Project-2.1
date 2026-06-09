@@ -1,0 +1,32 @@
+.empty-surveyresults{
+    background-color: #589687;
+    border: 10px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    padding: 10px;
+    height: 800px;
+}
+
+.surveyResults{
+    background-color: #589687;
+    border: 10px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    text-align: center;
+    font-family: monospace;
+    font-size: larger;
+}
+
+.surveyAnswer{
+
+    border: 10px solid rgb(46, 45, 45);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1 rem;
+    background-color: grey;
+    color: white;
+    font-size: large;
+    font-family: monospace;
+    gap: 10px;
+    text-align: left;
+
+}
+

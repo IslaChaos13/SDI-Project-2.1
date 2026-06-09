@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSurvey } from "../context/SurveyContext"
-
+import '../css/Survey.css'
 function Survey() {
     const watchHrsOptions = [
     "0 hours (I don't watch TV shows)",
@@ -72,8 +72,10 @@ function Survey() {
 
 return (
     <>
-        <h1>Survey</h1>
+        <div className = "survey">
+
         <form onSubmit={handleSubmit}>
+        <h1>Survey</h1>
         <ol>
         <li>
             How many hours do you spend watching TV shows?
@@ -167,7 +169,7 @@ return (
 
       </form>
 
-
+          </div>
 
     </>
   );

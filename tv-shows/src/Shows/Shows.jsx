@@ -2,10 +2,14 @@ import { useState, useEffect } from 'react'
 import { useNavigate, useOutletContext } from 'react-router-dom'
 import './Shows.css'
 import ShowDetails from '../ShowDetails/ShowDetails'
+import { useWatchlist } from "../context/WatchlistContext"
 
 function Shows () {
     const { search } = useOutletContext()
     const [tvShows, setTVShows] = useState([])
+
+
+    const {addToWatchlist , removeFromWatchlist, isInWatchlist} = useWatchlist();
 
     const url = 'https://api.tvmaze.com'
     const shows = `${url}/shows`
@@ -22,6 +26,13 @@ function Shows () {
         t.name.toLowerCase().includes(search.toLowerCase())
     )
 
+
+    const handleToggle = (show) => {
+    isInWatchlist(show.id)
+        ? removeFromWatchlist(show.id)
+        : addToWatchlist(show)
+}
+
     return (
         <>
             <div className ='tvShows-main'>
@@ -34,6 +45,9 @@ function Shows () {
                     < img src = {t.image?.medium} alt={t.name}
                         onClick={() => {navigate(`/showDetails/${t.id}`)}}
                     />
+                    <button onClick={() => handleToggle(t)}>
+                    {isInWatchlist(t.id) ? "✓ In Watchlist" : "+ Add to Watchlist"}
+                    </button>
                     </li>
                 ))}
             </ul>
