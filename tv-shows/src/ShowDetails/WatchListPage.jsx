@@ -1,17 +1,19 @@
 import { useWatchlist } from "../context/WatchlistContext";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './WatchListPage.css'
 
 
 function WatchlistPage() {
   const { watchlist, removeFromWatchlist } = useWatchlist();
+  const navigate = useNavigate()
 
   if (watchlist.length === 0) {
     return (
       <div>
         <h1>My Watchlist</h1>
         <p>No shows saved yet.</p>
-        <Link to="/">Browse shows</Link>
+        <button onClick={() => {navigate('/shows')}}>Browse shows</button>
+
       </div>
     );
   }
@@ -35,4 +37,4 @@ function WatchlistPage() {
   );
 }
 
-export default WatchListPage;
+export default WatchlistPage;

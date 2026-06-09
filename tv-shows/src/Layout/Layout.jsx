@@ -14,7 +14,7 @@ function Layout(){
                 <li ><button className ='home' type="button" onClick={() => {navigate('/')}}>Home</button></li>
                 <li><button className ='shows' onClick={() => {navigate('./shows')}}>TV Shows</button></li>
                 <li> <button className='watchlist' onClick={() => {navigate('/watchlist')}}>Watch List</button></li>
-                <li><button className='survey'>Survey</button></li>
+                <li><button className='survey' onClick={() => {navigate('/survey')}}>Survey</button></li>
                 <li> <input
                 className = 'search'
                 type ='text'

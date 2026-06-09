@@ -6,6 +6,7 @@ import Shows from "./Shows/Shows";
 import ShowDetails from './ShowDetails/ShowDetails'
 import { WatchlistProvider } from "./context/WatchlistContext";
 import WatchlistPage from "./ShowDetails/WatchlistPage";
+import Survey from "./pages/Survey"
 
 const router = createBrowserRouter([
   {
@@ -25,8 +26,12 @@ const router = createBrowserRouter([
         element: <ShowDetails />
       },
       {
-        path: "watchlist",
+        path: "/watchlist",
         element: <WatchlistPage />
+      },
+       {
+        path: "/survey",
+        element: <Survey />
       }
 
     ]

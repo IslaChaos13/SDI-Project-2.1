@@ -14,7 +14,7 @@ function HomePage() {
         <ul>
             <li>Orange: Shows</li>
             <li>Green: My Watch List</li>
-            <li>Blue: </li>
+            <li>Blue: Survey</li>
             <li>Purple:</li>
             <li>Pink </li>
         </ul>
@@ -28,7 +28,7 @@ function HomePage() {
             </div>
 
             <div className="blue">
-                <button></button>
+                <button onClick={() => navigate("/survey")}></button>
             </div>
 
             <div className="purple">
