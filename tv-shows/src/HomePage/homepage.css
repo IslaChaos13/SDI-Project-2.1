@@ -54,7 +54,7 @@
     border: none;
 }
 
-.tv-screen .blue button{
+.tv-screen .surveyOverlay button{
     position: relative;
     top: 65px;
     left: 390px;
@@ -62,7 +62,7 @@
     padding: 2%;
 }
 
-.tv-screen .purple button{
+.tv-screen .surveyResultsOverlay button{
     position: relative;
     top: 10px;
     left: 458px;

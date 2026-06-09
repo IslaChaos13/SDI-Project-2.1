@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSurvey } from "../context/SurveyContext"
 
 function Survey() {
     const watchHrsOptions = [
@@ -31,10 +32,14 @@ function Survey() {
         "Weekly"
     ]
 
+
+
     const [watchHrs, setWatchHrs] = useState("");
     const [preferredMethod, setPreferredMethod] = useState("");
     const [genresChoice, setGenresChoice] = useState([]);
+    const [favoriteShow, setFavoriteShow] = useState("")
     const [seasonWatch, setSeasonWatch] = useState("")
+    const { results, setResults } = useSurvey();
 
 
     const handleGenreChange = (genre) => {
@@ -45,10 +50,30 @@ function Survey() {
     );
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const newEntry ={
+            watchHrs,
+            preferredMethod,
+            genresChoice,
+            favoriteShow,
+            seasonWatch,
+        }
+        setResults((prev) => [...prev, newEntry])
+
+        setWatchHrs("");
+        setPreferredMethod("");
+        setGenresChoice([]);
+        setFavoriteShow("");
+        setSeasonWatch("");
+
+    }
+
 return (
     <>
         <h1>Survey</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
         <ol>
         <li>
             How many hours do you spend watching TV shows?
@@ -110,7 +135,12 @@ return (
           <label htmlFor="favoriteTVShow">
             What is your favorite TV show of all time?
           </label>
-          <input id="favoriteTVShow" type="text" />
+          <input
+            id="favoriteShow"
+            type="text"
+            value={favoriteShow}
+            onChange={(e) => setFavoriteShow(e.target.value)}
+            />
         </li>
 
         <li>
@@ -136,6 +166,9 @@ return (
         <button type="submit">Submit</button>
 
       </form>
+
+
+
     </>
   );
 }

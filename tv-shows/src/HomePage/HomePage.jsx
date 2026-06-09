@@ -15,7 +15,7 @@ function HomePage() {
             <li>Orange: Shows</li>
             <li>Green: My Watch List</li>
             <li>Blue: Survey</li>
-            <li>Purple:</li>
+            <li>Purple: Survey Results</li>
             <li>Pink </li>
         </ul>
 
@@ -27,12 +27,12 @@ function HomePage() {
                 <button onClick={() => navigate("/watchlist")}></button>
             </div>
 
-            <div className="blue">
+            <div className="surveyOverlay">
                 <button onClick={() => navigate("/survey")}></button>
             </div>
 
-            <div className="purple">
-                <button></button>
+            <div className="surveyResultsOverlay">
+                <button onClick={() => navigate("/surveyresults")}></button>
             </div>
             <div className="pink">
                 <button></button>
