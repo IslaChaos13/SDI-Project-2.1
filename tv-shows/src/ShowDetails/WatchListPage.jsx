@@ -10,11 +10,12 @@ function WatchlistPage() {
   if (!watchlist || watchlist.length === 0) {
     return (
       <div className = "empty">
+
         <h1>My Watchlist</h1>
         <p>No shows saved yet.</p>
         <button onClick={() => {navigate('/shows')}}>Browse shows</button>
-
       </div>
+
     );
   }
 
@@ -25,7 +26,9 @@ function WatchlistPage() {
       <div className="watchlist-grid">
         {watchlist.map((show) => (
           <div key={show.id} className="watchlist-card">
-            <img src={show.image?.medium} alt={show.name} />
+            <img src={show.image?.medium} alt={show.name}
+
+            />
             <h3>{show.name}</h3>
             <p>{show.genres?.join(' | ') || 'No genres listed'}</p>
             <button onClick={() => removeFromWatchlist(show.id)}>

@@ -5,12 +5,14 @@ import '../css/SurveyResults.css'
 function SurveyResults() {
   const { results } = useSurvey();
 
+  const navigate = useNavigate()
+
   if(!results || results.length === 0)
     return(
       <div className = "empty-surveyresults">
         <h1>All Survey Results</h1>
         <p> No survey has been submitted yet.</p>
-        <button onClick={() => {navigate('/survey')}}>doesnt work</button>
+        <button onClick={() => {navigate('/survey')}}>Back to Survey</button>
       </div>
     )
 

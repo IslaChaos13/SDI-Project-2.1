@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
-import { useNavigate, useOutletContext } from 'react-router-dom'
+import { Outlet, useNavigate, useOutletContext } from 'react-router-dom'
 import './Shows.css'
 import ShowDetails from '../ShowDetails/ShowDetails'
 import { useWatchlist } from "../context/WatchlistContext"
 
 function Shows () {
-    const { search } = useOutletContext()
+    const [search, setSearch] = useState("")
     const [tvShows, setTVShows] = useState([])
 
 
@@ -38,6 +38,13 @@ function Shows () {
             <div className ='tvShows-main'>
                 <div className = 'tvShows-screen'>
             <h1>TV SHOWS</h1>
+            <input
+                className = 'search'
+                type ='text'
+                placeholder="Search"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+            />
               <p>Dive into your next obsession with a website built for nonstop binge-watching. From gripping dramas and laugh-out-loud comedies to edge-of-your-seat thrillers, every series is just a click away. Discover new favorites, revisit classics, and let entire seasons unfold back-to-back without interruption. Whether you've got a free evening or a full weekend to disappear into, this is your all-access pass to stories you won't want to pause.</p>
             <ul>
                 {filterShows.map((t) => (
@@ -53,6 +60,7 @@ function Shows () {
             </ul>
             </div>
             </div>
+                <Outlet context = {{search}}/>
         </>
     )
 }

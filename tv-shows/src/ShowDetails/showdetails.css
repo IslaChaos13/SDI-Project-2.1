@@ -12,13 +12,20 @@
 }
 
 .l-Details h1{
+    font-family: monospace;
+    text-decoration: underline;
     text-align: center;
+    text-shadow: 3px 3px 1px darkgray;
 }
 
 .r-Details{
+    background-color: gray;
+    color: white;
+    padding: 10px;
     flex: 2;
     align-items: center;
     font-family: monospace;
     text-align: justify;
+    font-size: medium;
 }
 

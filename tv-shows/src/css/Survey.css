@@ -6,5 +6,35 @@
     border-radius: 10px;
     min-height: 100px;
     background-color: #589687;
+    font-family: monospace;
 
+}
+.survey form{
+    background-color: gray;
+    border: 5px solid black;
+    border-radius: 5px;;
+    padding: 10px;
+    gap: 20px;
+    font-size: large;
+    width: 100%;
+    line-height: 200% ;
+}
+
+.survey form button{
+    text-align: center;
+    padding: 8px 8px;
+    border-radius: 6px;
+    border: none;
+}
+.survey form h1{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-family: monospace;
+    text-shadow: 3px 3px 1px darkgray;
+}
+
+.survey form ol li{
+    color: white;
+    background-color: gray;
 }

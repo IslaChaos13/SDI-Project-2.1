@@ -75,7 +75,8 @@ return (
         <div className = "survey">
 
         <form onSubmit={handleSubmit}>
-        <h1>Survey</h1>
+
+        <h1>SURVEY</h1>
         <ol>
         <li>
             How many hours do you spend watching TV shows?

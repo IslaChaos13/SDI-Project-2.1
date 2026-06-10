@@ -15,18 +15,20 @@
 .tvShows-screen h1{
     text-align: center;
     color: rgb(0, 0, 0);
-    text-shadow: 3px 3px 1px #827171;
+    text-shadow: 3px 3px 1px darkgray;
+    font-family: monospace;
+    font-size: xx-large;
 }
 
 .tvShows-screen p{
     text-align: justify;
     font-family: monospace;
     font-size: medium;
-    background-color: #8dddb9;
+    background-color: gray;
     border: 2px solid black;
     border-radius: 5px;
-
-    padding: 5px;
+    color: white;
+    padding: 10px;
 
 }
 .tvShows-main ul{
