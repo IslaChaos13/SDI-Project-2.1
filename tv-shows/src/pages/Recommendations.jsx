@@ -10,9 +10,7 @@ function getWordFrequencies(words) {
 }
 
 function RecommendationWordCloud({ words }) {
-  if (words.length === 0) return <p>No recommendations yet.</p>
-
-  ;
+  if (words.length === 0) return <p>No recommendations yet.</p>;
 
   const freq = getWordFrequencies(words);
   const max = Math.max(...Object.values(freq));
