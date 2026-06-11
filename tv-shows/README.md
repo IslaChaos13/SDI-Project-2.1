@@ -14,6 +14,8 @@ The home page has working button overlays on the color boxes on the bottom of th
 4. Purple: Survey Results
 5. Recommendations
 
+The buttons uses a button overlay in the Homepage.css.
+
 ## TV Shows
 
 ![TV-Shows](/tv-shows/public/README_Photos/TvShows.png)
@@ -38,4 +40,17 @@ Both the brows show and tv shows buttons will redirect you the list of tv shows.
 
 [!Watchlist](/tv-shows/public/README_Photos/Watchlist.png)
 
+### Survey
+
 [!Survey](/tv-shows/public/README_Photos/Survey.png)
+The survey polls users asking questions watching trends and recommended watch methods and genres. Results are populated to its own page under Survey Results.
+
+[!Survey-Results](/tv-shows/public/README_Photos/Survey-Results.png)
+
+### Recommendations
+
+[!No-Recommendations](/tv-shows/public/README_Photos/No_Recommendations.png)
+
+[!Recommendations](/tv-shows/public/README_Photos/Recommendations.png)
+
+When a recommendation is submitted, it will appear as a word cloud. The text size is adjusted when users suggest the same tv show.
