@@ -16,7 +16,7 @@ function HomePage() {
             <li>Green: My Watch List</li>
             <li>Blue: Survey</li>
             <li>Purple: Survey Results</li>
-            <li>Pink </li>
+            <li>Pink: Recommendations </li>
         </ul>
 
             <div className="showOverlay">
@@ -34,8 +34,11 @@ function HomePage() {
             <div className="surveyResultsOverlay">
                 <button onClick={() => navigate("/surveyresults")}></button>
             </div>
-            <div className="pink">
-                <button></button>
+            <div className="recommend">
+                <button
+                onClick={() => navigate("/recommendations")}
+
+                ></button>
             </div>
 
       </div>

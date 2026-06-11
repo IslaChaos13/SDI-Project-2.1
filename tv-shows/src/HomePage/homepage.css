@@ -75,11 +75,12 @@
     padding: 2%;
      border: none;
 }
-.tv-screen .pink button{
+.tv-screen .recommend button{
     position: relative;
-    top: 45px;
+    top: 50px;
     left: 530px;
     background-color: transparent;
     padding: 2%;
-     border: none;
+    border: none;
+
 }

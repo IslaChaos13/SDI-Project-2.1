@@ -9,6 +9,7 @@ import { SurveyProvider } from "./context/SurveyContext"
 import WatchlistPage from "./ShowDetails/WatchlistPage";
 import Survey from "./pages/Survey"
 import SurveyResults from "./pages/SurveyResults"
+import TvRecommendations from "./pages/Recommendations"
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/SurveyResults",
         element: <SurveyResults />
+      },
+      {
+        path: "/Recommendations",
+        element: <TvRecommendations />
       }
 
     ]
@@ -47,10 +52,10 @@ const router = createBrowserRouter([
 
 function App() {
   return(
-  <WatchlistProvider>
-    <SurveyProvider>
-  <RouterProvider router={router} />
-  </SurveyProvider>
+    <WatchlistProvider>
+      <SurveyProvider>
+        <RouterProvider router={router} />
+      </SurveyProvider>
   </WatchlistProvider>)
 }
 

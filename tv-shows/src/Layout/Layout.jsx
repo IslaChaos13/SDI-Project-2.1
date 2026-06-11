@@ -16,6 +16,14 @@ const [search, setSearch] = useState("")
                 <li> <button className='watchlist' onClick={() => {navigate('/watchlist')}}>Watch List</button></li>
                 <li><button className='survey-btn' onClick={() => {navigate('/survey')}}>Survey</button></li>
                 <li><button className="survey-results" onClick={() => {navigate('/surveyresults')}}>Survey Results</button></li>
+                <li>
+                    <button
+                    className="tvRecommendations"
+                    onClick={() => {navigate('/Recommendations')}}
+                    >
+                    Recommendations
+                    </button>
+                </li>
 
             </ul>
 

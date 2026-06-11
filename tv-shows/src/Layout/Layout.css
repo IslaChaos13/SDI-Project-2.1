@@ -27,6 +27,8 @@
     padding: 8px 8px;
     border-radius: 6px;
     border: none;
+    font-family: monospace;
+    text-transform: uppercase;
 
 }
 .layout-main ul .home{
@@ -51,6 +53,10 @@
 .layout-main ul .survey-results{
     color: white;
     background-color: #cc98c4;
+}
+.layout-main ul .tvRecommendations{
+    color: white;
+    background-color: #dd567e;
 }
 
 .layout-main ul .search{

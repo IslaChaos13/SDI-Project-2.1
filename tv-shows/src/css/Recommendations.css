@@ -1,0 +1,54 @@
+.wordCloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    font-family: monospace;
+    border: 5px black solid;
+    border-radius: 5px;
+    background-color: rgb(236, 216, 180);
+    padding: 15px;
+    gap: 10px;
+}
+
+.recommendations {
+    font-family: monospace;
+    background-color: #589687;
+    height: 2cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: large;
+    gap: 10px;
+}
+
+.recommendations button{
+    background-color: #4690e4;
+    color: white;
+    padding: 8px;
+    border-radius: 5px gray;
+    border: none;
+    text-transform: uppercase;
+
+}
+
+.recommendations p{
+    background-color: #589687;
+    height: 100%;
+    font-family: monospace;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    border: 5px solid black;
+    border-radius: 5px;
+    height:10cm;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
