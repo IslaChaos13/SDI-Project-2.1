@@ -32,25 +32,25 @@ The show details page has the title and show poster on the left hand of the scre
 
 ### Empty Watch List Page
 
-[!Empty Watchlist Page](/tv-shows/public/README_Photos/Watchlist_Empty.png)
+![Empty-Watchlist-Page](/tv-shows/public/README_Photos/Watchlist_Empty.png)
 
 Both the brows show and tv shows buttons will redirect you the list of tv shows.
 
 ### Watch List Filled
 
-[!Watchlist](/tv-shows/public/README_Photos/Watchlist.png)
+![Watchlist](/tv-shows/public/README_Photos/Watchlist.png)
 
 ### Survey
 
-[!Survey](/tv-shows/public/README_Photos/Survey.png)
+![Survey](/tv-shows/public/README_Photos/Survey.png)
 The survey polls users asking questions watching trends and recommended watch methods and genres. Results are populated to its own page under Survey Results.
 
 [!Survey-Results](/tv-shows/public/README_Photos/Survey-Results.png)
 
 ### Recommendations
 
-[!No-Recommendations](/tv-shows/public/README_Photos/No_Recommendations.png)
+![No-Recommendations](/tv-shows/public/README_Photos/No_Recommendations.png)
 
-[!Recommendations](/tv-shows/public/README_Photos/Recommendations.png)
+![Recommendations](/tv-shows/public/README_Photos/Recommendations.png)
 
 When a recommendation is submitted, it will appear as a word cloud. The text size is adjusted when users suggest the same tv show.
